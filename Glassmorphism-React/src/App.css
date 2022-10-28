@@ -1,0 +1,132 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 50px;
+}
+
+.page {
+  display: flex;
+  position: relative;
+  height: 80vh;
+  width: 80vw;
+  background: rgba( 255, 255, 255, 0.3 );
+  box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.18 );
+  backdrop-filter: blur( 7.5px );
+  -webkit-backdrop-filter: blur( 7.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  z-index: 4;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  border: 1px solid rgba( 255, 255, 255, 0.25 );
+  
+
+}
+
+li {
+  list-style: none;
+}
+
+
+
+header {
+  position: absolute;
+  top: -40px;
+  right: 20px;
+  left: 20px;
+  padding: 20px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba( 255, 255, 255, 0.5);
+  box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.18 );
+  border-radius: 20px;
+  backdrop-filter: blur(50px);
+  border: 1px solid rgba( 255, 255, 255, 0.25 );
+  border-top: 1px solid rgba( 255, 255, 255, 0.5 );
+  border-left: 1px solid rgba( 255, 255, 255, 0.5 );
+}
+
+header .logo {
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2.5em;
+}
+
+header ul {
+  display: flex;
+}
+
+header ul li {
+  list-style: none;
+  margin: 0 10px;
+}
+
+header ul li a {
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.5em;
+  color: #000000;
+  padding: 8px 15px;
+}
+
+header ul li a:hover,
+.active{
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 0 5px 10px rgba( 0, 0, 0, 0.1 )
+}
+
+.content {
+  transform: translateX(-100px);
+  background: rgba( 255, 255, 255, 0);
+  box-shadow: 0 8px 32px 0 rgba( 0, 0, 0, 0.18 );
+  border-radius: 20px;
+  backdrop-filter: blur(50px);
+  border: 1px solid rgba( 255, 255, 255, 0.25 );
+  border-top: 1px solid rgba( 255, 255, 255, 0.5 );
+  border-left: 1px solid rgba( 255, 255, 255, 0.5 );
+  max-width: 700px;
+  padding: 55px;
+  
+}
+
+.content h2 {
+  font-weight: 800;
+  font-size: 3em;
+  color: #000000;
+}
+
+.content p {
+  font-weight: 700;
+font-size: 1.5em;
+color: #000000;
+}
+
+.content a {
+  display: inline-block;
+  padding: 15px 30px;
+  color: #000000;
+  margin-top: 20px;
+  border-radius: 30px;
+  font-size: 1.5em;
+  font-weight: 500;
+  text-decoration: none;
+  background: #ffffff;
+  box-shadow: 0 5px 10px rgba( 0, 0, 0, 0.1 );
+}
