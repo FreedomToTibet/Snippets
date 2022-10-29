@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-inline: auto;
+	width: 600px;
+	min-height: 300px;
+	background: rgb(169, 158, 158);
+	border-radius: 15px;
+}
+
+.tabheader__items {
+	width: 540px;
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+	list-style-type: none;
+	height: 40px;
+}
+
+.tabheader__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: rgb(222, 212, 212);
+	font-size: 20px;
+	border: 2px solid black;
+	border-radius: 5px;
+	padding: 20px 20px;
+	cursor: pointer;
+}
+
+.tabheader__item_active {
+	animation-name: border;
+	animation-duration: 1.5s;
+	animation-timing-function: linear;
+	border-radius: 5px 5px 0 0;
+	border-bottom: none;
+}
+
+.tabcontainer {
+	margin-top: 10px;
+	width: 540px;
+	padding: 5px 15px;
+}
+
+.tabcontent {
+	font-size: 18px;
+	color: rgb(222, 212, 212);
+}
+
+.show{
+	display:block
+}
+
+.hide{
+	display:none
+}
+
+.fade{
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+@keyframes fade 
+{
+	from {
+		opacity: 0.1;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes border 
+{
+	from {
+		border-radius: 5px;
+	}
+	to {
+		border-radius: 5px 5px 0 0;
+	}
+}
